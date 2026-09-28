@@ -1,0 +1,1 @@
+import jwt from "jsonwebtoken"; import config from "../config"; export type TokenPayload={userId:string;role:"CUSTOMER"|"ADMIN"}; export const signToken=(p:TokenPayload)=>jwt.sign(p,config.JWT_SECRET,{expiresIn:config.JWT_EXPIRES_IN as jwt.SignOptions["expiresIn"]}); export const verifyToken=(t:string)=>jwt.verify(t,config.JWT_SECRET) as TokenPayload;

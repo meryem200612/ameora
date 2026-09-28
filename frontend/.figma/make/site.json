@@ -1,0 +1,11 @@
+{
+  "title": "Ameora",
+  "description": "A luxurious, user-friendly e-commerce platform offering elegant women's jewelry with seamless browsing, shopping, and order management across devices.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
